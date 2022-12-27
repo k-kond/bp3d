@@ -4,16 +4,17 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/gedex/bp3d"
+	"github.com/k-kond/bp3d"
 )
 
 func main() {
 	p := bp3d.NewPacker()
 
 	// Add bins.
-	p.AddBin(bp3d.NewBin("Small Bin", 10, 15, 20, 100))
+	p.AddBin(bp3d.NewBin("Big Bin", 10, 15, 20, 100))
 	p.AddBin(bp3d.NewBin("Medium Bin", 100, 150, 200, 1000))
-
+	p.AddBin(bp3d.NewBin("Small Bin", 10, 15, 20, 100))
+	
 	// Add items.
 	p.AddItem(bp3d.NewItem("Item 1", 2, 2, 1, 2))
 	p.AddItem(bp3d.NewItem("Item 2", 3, 3, 2, 3))
